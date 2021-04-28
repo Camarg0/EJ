@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Criando uma lista não ordenada para o menu de navegação superior-->
+    <header>
+        <a target="_blank" rel="external" href="https://www.asciiej.com.br/"><img src="imagens/logoimagem-semfundo 1.png" alt=""></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Sobre você</a></li>
+                <li><a href="#idConhecimento">Conhecimentos</a></li>
+                <li><a href="#idLinkedin">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim do menu de navegação-->
+    <br>  
+
+    <!--SobreVocê-->
+        <br>
+        <div class="description">
+            <h1 class="titulo">Sobre você</h1>
+            <img class="perfil" src="imagens/eu-150.png" alt="">
+            <p class="desc">
+                Seja bem-vindo ao meu portfólio &#x1F604. Meu nome é Matheus de Camargo Martins, tenho 20 anos e atualmente curso o quinto período de Sistemas de Informação na Universidade Federal de Uberlândia. Tenho me descoberto cada vez mais no mundo da programação através das tecnologias client-side. Ainda não tenho experiência profissional na área, mas em breve pretendo começar a atuar no mercado de trabalho. Minha característica mais forte é que sempre coloco muito esforço naquilo que eu almejo!
+            </p>
+        </div>
+   <!--Fim do SobreVocê-->
+   
+   <!--Construção da tab-->
+   
+    <div id="idConhecimento" class="conhecimento"> 
+        <h1>Conhecimentos</h1>
+        
+    </div>
+    <br>
+
+    <!--Div feita para criar a box, sendo possível estilizar com CSS-->
+    <div class="box">
+    <!--Botões clicáveis, para abrir o conteúdo de cada elemento-->
+    <button class="linkJS" onclick="liberaTab(event, 'education')">Educação</button>
+    <button class="linkJS" onclick="liberaTab(event, 'skills')">Habilidades</button>
+    <button class="linkJS" onclick="liberaTab(event, 'softskills')">Soft Skills</button>
+
+    <!--IDs e Classes dos elementos, agrupados separadamente por divs.-->
+    <div id="education" class="tabcontent">
+        <p>
+        > Atualmente no quinto período de Sistemas de Informação na UFU.
+        
+        </p>
+    </div>
+  
+    <div id="skills" class="tabcontent">
+        <p>
+        > Java e Programação Orientada a Objetos (nível de conhecimento básico)
+
+        > HTML e CSS (nível de conhecimento básico)
+
+        > Banco de Dados (nível de conhecimento básico)
+
+        > C++ (nível de conhecimento médio) 
+
+        > Inglês (nível de conhecimento avançado)
+        </p>
+    </div>
+  
+    <div id="softskills" class="tabcontent">
+        <p> 
+        > Resiliência
+
+        > Criatividade
+
+        > Colaboração
+
+        > Flexibilidade 
+        </p>
+    </div>
+    </div>
+    
+    <br>
+    <br>
+    <h1 class="contact">Contato</h1>
+        <p class="data">
+            <img class="telefone" src="imagens/contato-150.png" alt="">
+            Email: <a href="mailto:joaozinho123@gmail.com">joaozinho123@gmail.com</a>
+            Telefone: <a href="tel:999999999">+55(34)999999999</a>
+            LinkedIn: <a id="idLinkedin" target="_blank" rel="external" href="https://www.linkedin.com/in/matheus-martins-348ab7191/">matheusmartins</a>
+            ...
+        </p>
+
+    
+    <div class="barraFinal">
+        <p class="textoFinal">
+            Desenvolvido com <img src="imagens/coracao.svg" alt=""> por Matheus Camargo
+        </p>
+    </div>
+    
+</body>
+
+    <script type="text/javascript" src="liberaTab.js"></script>
+
+</html>
+
+
+
+
+
+

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+body{
+    background-color: #05ADAD;
+}   
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+
+/*estilização do menu de navegação*/
+* {
+    margin: 0;  
+    padding: 0; 
+}
+
+header {
+    display: flex;  /*flexibiliza conforme o tamanho do navegador*/
+    justify-content:space-between; /*coloca a imagem e os itens dispostos nas beiradas*/
+    align-items: center;
+    padding: 7px 10%;
+    background-color: white;
+}
+
+
+ul li{  /*estiliza a lista de itens como um todo*/
+    list-style: none;   /*Tira os pontos dos itens listados*/
+    display: inline-block;  /*Coloca os itens lado a lado, inline*/
+    line-height: 100px; /*centralizar a minha lista de itens na barra*/
+}
+
+ul li a{    /*estiliza especificamente os itens da lista*/
+    display: block; /*cria um bloco entre o link que pode ser clicado*/
+    text-decoration: none;  /*Tira a underline dos itens*/
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkslategray;
+    padding: 0 30px;  /*espaço entre os itens da lista*/
+}   
+
+ul li a:hover{  /*aplica o hover ao passar o mouse por cima dos itens*/
+    color: rgb(8, 64, 248);
+}
+
+
+/*estilização do 'Sobre você*/
+.perfil {
+    margin-right: 50px;
+    float: left;
+}
+
+.description {
+    display: inline-block;
+    margin: 50px 10cm 150px;
+}
+
+.desc {
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+}
+
+.titulo {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #192734;
+}
+
+
+/*estilização dos botões e seus respectivos conteúdos*/
+.conhecimento {
+    text-align: center;
+    color: #192734;
+}
+
+.box {
+    height: 8cm;
+    display: block;
+    background-color: #036E6E;
+    text-align: center;
+    margin: 20px 10% 50px 10%;
+    padding: 20px 100px 5cm 100px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.box button {
+    padding: 15px 25px 15px 25px;
+    background-color: #07FAFA;
+    cursor: pointer;
+    margin: 5px 3cm 5px 3cm;
+    border-radius: 8px;
+    border: 5px solid #05ADAD;
+    font-size: 20px;
+    transition: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.box button:hover {
+    background-color: #05ADAD;
+}
+
+.tabcontent {
+    white-space: pre;
+    display: none;
+    text-align: left;
+    margin: 0 0 50px 5cm;
+    padding: 0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+
+/*estilização de 'Contato'*/
+
+.contact {
+    margin: 15px 5cm 10px 5cm;
+    color: #192734;
+}
+
+.telefone {
+    margin: 10px 0 20px 5cm;
+    float: left;
+}
+
+
+.data {
+    white-space: pre;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*estilização da barra final*/
+
+.barraFinal {
+    background-color: whitesmoke;
+    margin: 2.5cm 0 0 0;
+}
+
+.textoFinal {
+    white-space: pre;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
